@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-v1-12-4.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">     
         <link rel="stylesheet" href="css/animate.css">
     </head>
     <body>
+    
        <!---navbar--->
        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
@@ -19,22 +21,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarnya">
                     <div class="navbar-nav">
-                        <a class="link" href="#1">Section 1 </a>
-                        <a class="link" href="#2">Section 2</a>
-                        <a class="link" href="#3">Section 3</a>
+                        <a class="link" href="#1">Home </a>
+                        <a class="link" href="#2">About Me</a>
+                        <a class="link" href="#3">My Portofolio</a>
+                        <a class="link" href="#4">Contact Me</a>
                         <a class="link" href="http://instagram.com/pahrulrzl">My Social Media</a>
                     </div>
                 </div>
             </div>
         </nav> 
+    
         <!---section1--->
         <section class="section1" id="1">
-            <img src="img/logo.png">
+            <div class="container">
+                 </div>
+            <img src="img/ganteng.png" class="animated infinte fadeInDown" width="250px" align="center" style="margin-top: 300px"/> 
             <h1 class="judul">
                 Pahrul Rizal P
             </h1>
             <h2 class="sub-judul">
-                Artwork
+                Cinematographer
             </h2>
         </section>
         <!---section2--->
@@ -43,15 +49,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="judul-1">
-                            Videography
+                            Hey, It's Me!
                         </h1>
                     <h2 class="isi-1">
-                        Videography refers to the process of capturing moving images on electronic media and even streaming media. The term includes methods of video production and post-production. It could be considered the video equivalent of cinematography.
+                        Hello, my name is Pahrul Rizal Pebrian. I was born in Jakarta on 1998 when monatery crisis happened. 
+                        I have a passion in cinematography since I was in junior high school. I really love to watching a movie and see what happen in behind the scene of the film.
                     </h2>
                     </div>
                     <div class="col-md-6">
-                        <img src="img/video-camera-vector-icon-256.png" width="300px" style>
-            
                     </div>
                 </div>
             </div>
@@ -60,22 +65,71 @@
         <section class="section3" id="3">
             <div class="container">
                 <div class="row">
-                    <h1 class="judul" style="text-align:center">
-                        CLASSIFICATION
+                    </div>
+                </div>
+                    <h1 class="judul-2" style="text-align:center">
+                        My Portofolio
                     </h1>
+                    <div class="col-md-1" style="margin-top: 100px">
+
                 </div>
+            <div class="wrapper">
                 <div class="row">
-                    <div class="col col-warna">
-                        a
-                    </div>
-                    <div class="col col-warna2">
-                        b
-                    </div>
-                    <div class="col col-warna">
-                        c
-                    </div>
+                
+                
+                <div class="videowrapper">
+                    <iframe  width="560" height="315" style="margin-left: 60px" src="https://www.youtube.com/embed/IFLAuzlCL_g?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+        
+                    
                 </div>
+            <div class="col-md-3">      
+                <iframe width="560" height="315" style="margin-left: 60px" src="https://www.youtube.com/embed/mKRirN-J6Ck?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+                <div class="col-md-5">
+                 <iframe width="560" height="315" style="margin-left: 200px" src="https://www.youtube.com/embed/vvKbmDsLRJ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            </div>
+            </div>    
+        </section>
+        <!---section4--->
+        <section class="section4" id="4">
+        <div class="container">
+            <h1 class="judul-3" style="text-align: center">
+                Contact Me
+            </h1>
+            <img src="img/contact.png">
+    
             </div>
         </section>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </html> 

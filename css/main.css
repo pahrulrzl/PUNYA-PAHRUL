@@ -3,54 +3,83 @@ body,html{
     margin:0 auto;
 }  
 .link{
-    color: green;
-    padding: 10px 20px
+    color: black;
+    padding: 10px 20px;
 }
 .link:hover{
-    background: pink    ;
+    background: grey;
 }
 .section1{
-    background: url(../img/blue_glow.0.jpg);
-    width: 100%;
-    height: 110%;
+    background: url(../img/gimbal.jpg)no-repeat center center fixed; 
+    background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    background-size: cover;;
+    width: 1920px;
+    height: 1090px;
     text-align: center;
 }
 .judul{
-    font-family: bebas;
-    font-size: 70px;
+    font-family: century gothic;
+    font-size: 45px;
     color: white;
     margin: auto;
+    padding: auto;
 }
 .sub-judul{
-    font-family: coco gothic;
+    font-family: calibri;
     font-size: 30px;
     color: white;
     margin: auto;
+    padding-top: 10px
 }
 .section2{
-    background: white;
+    background: url(../img/arrival-cinematography-oscars-10747_r.jpg);
+    width: 100%;
+    height: 100%;
     padding: 100px 0px;
     
 }
 .judul-1{
     font-family: bebas;
     font-size: 70px;
-    color: black;
-    margin: auto;
+    color: white;
+    margin-top: 400px;
 }
 .isi-1{
     font-family: century gothic;
     font-size: 20px;
-    color: black;
+    color: white;
     margin: auto;
 } 
 .section3{
-    background: black;
-    padding: 100px 0px;
-} 
-.col-warna{
-    background: white
+    background: white;
+    padding: 200px 0px;
 }
-.col-warna2{
-    background: lightblue
+.judul-2{
+    font-family: century gothic;
+    font-size: 80px;
+    color: black;
+    padding-bottom: 100px;
+}
+
+.col-md-3{
+    margin-top: 0px;
+}
+.videowrapper{
+    width: 720;
+    height: 1280;
+    
+}
+.section4{
+    background: url(../img/Cinematography.jpg);
+    width: 100%;
+    height: 70%;
+    margin-bottom: 50px;
+}
+.judul-3{
+    font-family: century gothic;
+    font-size: 70px;
+    color: white;
+}
 }
